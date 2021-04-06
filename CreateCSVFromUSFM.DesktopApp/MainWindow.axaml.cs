@@ -4,6 +4,7 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using CreateCSVFromUSFM.Common;
 using CreateCSVFromUSFM.DesktopApp.Controls;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -44,7 +45,14 @@ namespace CreateCSVFromUSFM.DesktopApp
             UpdateStatus("Converting");
             await Task.Run(() =>
             {
-                CommonConverter.ConvertFiles(this.InputDirectoryControl.Text, this.OutputFileControl.Text);
+                try
+                {
+                    CommonConverter.ConvertFiles(this.InputDirectoryControl.Text, this.OutputFileControl.Text);
+                }
+                catch(Exception ex)
+                {
+                    UpdateStatus("Unexpected issue in conversion " + ex.Message);
+                }
             });
             UpdateStatus("Conversion Successful");
         }

@@ -24,4 +24,6 @@ Usage (On Windows) goes as follows
 
 ### App
 
-Currently not implemented
+Open the app and fill in the source directory and output file in the fields, or click on the buttons to the right of the fields to select the file manually.
+
+Click Convert to convert the files
