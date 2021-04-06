@@ -2,6 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Avalonia.VisualTree;
 using System.Collections.Generic;
 
 namespace CreateCSVFromUSFM.DesktopApp.Controls
@@ -28,7 +29,7 @@ namespace CreateCSVFromUSFM.DesktopApp.Controls
                 Filters = new List<FileDialogFilter>() { new FileDialogFilter() { Name = "CSV Files", Extensions = new List<string>() { "csv" } } },
                 InitialFileName = "output.csv",
             };
-            var path = await dialog.ShowAsync(new Window());
+            var path = await dialog.ShowAsync((Window)this.GetVisualRoot());
             this.PathText.Text = path;
         }
 

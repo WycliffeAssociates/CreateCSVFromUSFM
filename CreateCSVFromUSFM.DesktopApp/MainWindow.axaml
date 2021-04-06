@@ -25,6 +25,6 @@
       <cc:TextFileSave Name="OutputFile" Grid.Row="1" Grid.Column="1" MinWidth="500"/>
     </Grid>
     <Button Name="ConvertButton" Click="ConvertButton_Click" HorizontalAlignment="Center" Margin="0,10,0,0">Convert</Button>
-    <TextBlock HorizontalAlignment="Center" Name="Output" MaxWidth="500" MaxHeight="200"> </TextBlock>
+    <TextBlock HorizontalAlignment="Center" Name="Output" MaxWidth="500" MaxHeight="200"></TextBlock>
   </StackPanel>
 </Window>

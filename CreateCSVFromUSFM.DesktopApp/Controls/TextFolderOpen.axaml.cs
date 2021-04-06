@@ -23,7 +23,7 @@ namespace CreateCSVFromUSFM.DesktopApp.Controls
         private async void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new OpenFolderDialog();
-            var result = await dialog.ShowAsync(new Window());
+            var result = await dialog.ShowAsync((Window)this.GetVisualRoot());
             this.PathText.Text = result;
         }
 
