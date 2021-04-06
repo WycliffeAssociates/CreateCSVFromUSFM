@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateCSVFromUSFM.ConsoleAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateCSVFromUSFM.Common", "CreateCSVFromUSFM.Common\CreateCSVFromUSFM.Common.csproj", "{71DC03C9-87D6-4BF1-9DBC-2E25B9C60921}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateCSVFromUSFM.DesktopApp", "CreateCSVFromUSFM.DesktopApp\CreateCSVFromUSFM.DesktopApp.csproj", "{882B6A54-FA97-44DE-B118-6742C39EE584}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{71DC03C9-87D6-4BF1-9DBC-2E25B9C60921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71DC03C9-87D6-4BF1-9DBC-2E25B9C60921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71DC03C9-87D6-4BF1-9DBC-2E25B9C60921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882B6A54-FA97-44DE-B118-6742C39EE584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882B6A54-FA97-44DE-B118-6742C39EE584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882B6A54-FA97-44DE-B118-6742C39EE584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882B6A54-FA97-44DE-B118-6742C39EE584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
